@@ -1,0 +1,87 @@
+@theme "/dev/null"
+configuration {
+    modes:                          [combi];
+    combi-modes:                    [window, drun, run, dmenu];
+    show-icons:                     true;
+    display-drun: 		            "";
+    drun-display-format:            "{name}";
+    font:                           "CascadiaMonoNF 9";
+    disable-history:                false;
+    click-to-exit: 		            true;
+	transparency:			        "background";
+    location:                       0;
+}
+
+
+@import "~/.cache/wal/colors-rofi-dark"
+
+window {
+    width:              46%;
+    border:             0;
+    padding:            0;
+    background-color:   "@background, 0.6";
+}
+
+mainbox {
+    border:             0;
+    padding:            0;
+}
+
+element {
+    padding:            10;
+    children:           [ element-icon, element-text ];
+}
+
+element.selected {
+    background-color:   @background;
+}
+
+element-text, element-icon {
+    background-color:   inherit;
+    vertical-align:     0.5;
+    text-color:         @selected-active-background;
+    size:               18px;
+    padding:            0 10px 0 0;        /*top, right, bottom, left*/
+}
+
+element-text.selected, element-icon.selected {
+    background-color:   inherit;
+    text-color:         @foreground;
+}
+
+inputbar {
+    children:           [prompt, entry];
+    enabled:            true;
+    text-color:         @foreground;
+    spacing:            0;
+    padding:            1px;
+}
+
+prompt {
+    background-color:   @background;
+    padding:            12;
+    text-color:         @selected-active-background;
+}
+
+entry {
+    background-color:   @background;
+    padding:            12;
+    text-color:         @foreground;
+    hide-cursor-on-empty: true;
+    cursor-color:       @selected-active-background;
+}
+
+listview {
+    fixed-height:       1;
+    background-color:   @background;
+    columns:            1;
+    lines:              5;
+    scrollbar:          false;
+    border:             0;
+}
+
+textbox-prompt-colon {
+    expand:             false;
+    str:                "";
+    margin:             0px 0 0 0;
+}
