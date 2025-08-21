@@ -5,6 +5,7 @@ __      __ ___ __   __ ___  ___  ___
   \_/\_/  |_|_|  |_|  |___/|_|_||_|_\
 Custimized from https://github.com/elifouts/Dotfiles.git
 */
+
 {
         "layer": "top",
         "position": "top",
@@ -31,7 +32,7 @@ Custimized from https://github.com/elifouts/Dotfiles.git
             "format": "{class}",
             "icon": true,
             "icon-size": 15,
-            "expand": true,
+            "expand": true
         },       
         "custom/notification": {
             "tooltip": true,
