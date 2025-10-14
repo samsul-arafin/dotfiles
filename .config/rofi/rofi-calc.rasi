@@ -1,0 +1,6 @@
+@import ".config/rofi/config.rasi"
+
+/* The message box */
+#mainbox, message {
+    text-color: #f9b1b1ff;
+}
