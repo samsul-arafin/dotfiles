@@ -40,3 +40,17 @@ These tools are required for the custom scripts in .local/bin:
 
 ## 📥 Installation Commands (Arch Linux)
 These configurations are optimized for Arch Linux. You can install most dependencies using `pacman` and an AUR helper (like `yay`).
+```
+# 1. Official Repositories
+sudo pacman -S git stow hyprland hypridle hyprlock waybar rofi rofi-calc kitty neofetch python-pywal scrcpy gum
+
+# 2. AUR Packages (swww, matugen)
+# You need an AUR helper like yay or paru
+yay -S swww matugen-bin
+
+```
+_Note: For other distributions (Fedora, Debian, etc.), package names may differ, and you may need to build Hyprland tools from source.
+_
+# 🚀 Installation
+1. Clone the Repository
+Clone this repo to your home directory:
