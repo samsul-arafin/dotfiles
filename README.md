@@ -49,22 +49,24 @@ sudo pacman -S git stow hyprland hypridle hyprlock waybar rofi rofi-calc kitty n
 yay -S swww matugen-bin
 
 ```
-_Note: For other distributions (Fedora, Debian, etc.), package names may differ, and you may need to build Hyprland tools from source.
-_
+_Note: For other distributions (Fedora, Debian, etc.), package names may differ, and you may need to build Hyprland tools from source._
 # 🚀 Installation
 1. **Clone the Repository:**
   Clone this repo to your home directory
+
     ```
      git clone [https://github.com/samsul-arafin/dotfiles.git](https://github.com/samsul-arafin/dotfiles.git) ~/.dotfiles
     cd ~/.dotfiles
     ```
-2. **Apply Configurations:**
+    
+3. **Apply Configurations:**
   I use GNU Stow to manage symlinks. This will link the contents of the `.config` and `.local` directories in this repository to your home folder.
   **To install everything:**
+   
    ```bash
    stow .
    ```
-  Note: Since this repository mirrors the home directory structure (containing `.config` and `.local`), running `stow` . inside `~/.dotfiles` will correctly symlink these folders into `~/`.
+  _Note: Since this repository mirrors the home directory structure (containing `.config` and `.local`), running `stow` . inside `~/.dotfiles` will correctly symlink these folders into `~/`._
 # 📜 Custom Scripts
 The `.local/bin` directory contains several utility scripts integrated with Rofi:
 - `rofi-powermenu`: System power controls.
