@@ -54,3 +54,8 @@ _
 # 🚀 Installation
 **1. Clone the Repository:**
   Clone this repo to your home directory
+  ```
+  git clone [https://github.com/samsul-arafin/dotfiles.git](https://github.com/samsul-arafin/dotfiles.git) ~/.dotfiles
+cd ~/.dotfiles
+
+  ```
