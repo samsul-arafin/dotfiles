@@ -52,10 +52,18 @@ yay -S swww matugen-bin
 _Note: For other distributions (Fedora, Debian, etc.), package names may differ, and you may need to build Hyprland tools from source.
 _
 # 🚀 Installation
-**1. Clone the Repository:**
+1. **Clone the Repository:**
   Clone this repo to your home directory
   ```
   git clone [https://github.com/samsul-arafin/dotfiles.git](https://github.com/samsul-arafin/dotfiles.git) ~/.dotfiles
 cd ~/.dotfiles
 
   ```
+2. **Apply Configurations:**
+  I use GNU Stow to manage symlinks. This will link the contents of the `.config` and `.local` directories in this repository to your home folder.
+  **To install everything:**
+   ```bash
+   stow .```
+# 📜 Custom Scripts
+
+
