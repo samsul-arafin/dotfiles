@@ -27,3 +27,13 @@ Please ensure the following are installed on your system to make use of these co
   - rofi-calc (Calculator plugin)
 - Kitty (Terminal)
 - Neofetch (System info)
+
+## Script Dependencies
+These tools are required for the custom scripts in .local/bin:
+
+- NetworkManager (nmcli) - Required for rofi-wifimenu
+- swww - Wallpaper daemon (Required for rofi-wallchanger)
+- pywal & Matugen - Color scheme generation
+- Gum - Interactive shell prompts (Required for webapp-install)
+- scrcpy - Android screen mirroring (Required for sxp)
+- Browser - Brave, Chrome, Chromium, or Firefox (Required for webapp-launch)
