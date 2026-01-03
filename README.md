@@ -2,7 +2,7 @@
 This is my personal configuration files. This repository contains my customized setup for a Hyprland environment on Linux.
 
 # 📂 Directory Structure
-'''
+```
 .
 ├── .config
 │   ├── hypr/           # Hyprland (WM, Idle, Lock)
@@ -13,4 +13,17 @@ This is my personal configuration files. This repository contains my customized 
 ├── .local
 │   └── bin/            # Custom Scripts (Rofi menus, etc.)
 └── README.md
-'''
+```
+
+# 🛠 Prerequisites
+Please ensure the following are installed on your system to make use of these configurations:
+- GNU Stow (Recommended for installation)
+- Git
+- Hyprland (Window Manager)
+  - hypridle (Idle daemon)
+  - hyprlock (Screen locker)
+- Waybar (Status bar)
+- Rofi (Launcher)
+  - rofi-calc (Calculator plugin)
+- Kitty (Terminal)
+- Neofetch (System info)
