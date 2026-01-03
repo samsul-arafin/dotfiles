@@ -52,5 +52,5 @@ yay -S swww matugen-bin
 _Note: For other distributions (Fedora, Debian, etc.), package names may differ, and you may need to build Hyprland tools from source.
 _
 # 🚀 Installation
-1. Clone the Repository
-  Clone this repo to your home directory:
+**1. Clone the Repository:**
+  Clone this repo to your home directory
