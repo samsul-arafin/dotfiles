@@ -53,4 +53,4 @@ _Note: For other distributions (Fedora, Debian, etc.), package names may differ,
 _
 # 🚀 Installation
 1. Clone the Repository
-Clone this repo to your home directory:
+  Clone this repo to your home directory:
