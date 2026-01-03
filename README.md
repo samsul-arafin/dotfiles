@@ -20,23 +20,23 @@ Please ensure the following are installed on your system to make use of these co
 - **GNU Stow** (Recommended for installation)
 - **Git**
 - **Hyprland** (Window Manager)
-  - **hypridle** (Idle daemon)
-  - **hyprlock** (Screen locker)
+  - `hypridle` (Idle daemon)
+  - `hyprlock` (Screen locker)
 - **Waybar** (Status bar)
 - **Rofi** (Launcher)
-  - **rofi-calc** (Calculator plugin)
+  - `rofi-calc` (Calculator plugin)
 - **Kitty** (Terminal)
 - **Neofetch** (System info)
 
 ## Script Dependencies
-These tools are required for the custom scripts in .local/bin:
+These tools are required for the custom scripts in `.local/bin`:
 
-- **NetworkManager** (**nmcli**) - Required for **rofi-wifimenu**
-- **swww** - Wallpaper daemon (Required for **rofi-wallchanger**)
+- **NetworkManager** (`nmcli`) - Required for `rofi-wifimenu`
+- **swww** - Wallpaper daemon (Required for `rofi-wallchanger`)
 - **pywal** & **Matugen** - Color scheme generation
-- **Gum** - Interactive shell prompts (Required for **webapp-install**)
-- **scrcpy** - Android screen mirroring (Required for **sxp**)
-- **Browser** - **Brave**, Chrome, Chromium, or Firefox (Required for **webapp-launch**)
+- **Gum** - Interactive shell prompts (Required for `webapp-install`)
+- **scrcpy** - Android screen mirroring (Required for `sxp`)
+- **Browser** - **Brave**, Chrome, Chromium, or Firefox (Required for `webapp-launch`)
 
 ## 📥 Installation Commands (Arch Linux)
 These configurations are optimized for Arch Linux. You can install most dependencies using `pacman` and an AUR helper (like `yay`).
@@ -64,6 +64,22 @@ _
    ```bash
    stow .
    ```
+  Note: Since this repository mirrors the home directory structure (containing `.config` and `.local`), running `stow` . inside `~/.dotfiles` will correctly symlink these folders into `~/`.
 # 📜 Custom Scripts
+The `.local/bin` directory contains several utility scripts integrated with Rofi:
+- `rofi-powermenu`: System power controls.
+- `rofi-wallchanger`: Wallpaper switcher.
+- `rofi-wifimenu`: Network manager interface.
+- `webapp-launch/install`: Utilities for web apps.
+
+# 🔄 Updates
+To pull the latest changes and re-apply links:
+```
+cd ~/.dotfiles
+git pull origin main
+stow -R .
+
+```
+
 
 
