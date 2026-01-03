@@ -54,16 +54,16 @@ _
 # 🚀 Installation
 1. **Clone the Repository:**
   Clone this repo to your home directory
-  ```
-  git clone [https://github.com/samsul-arafin/dotfiles.git](https://github.com/samsul-arafin/dotfiles.git) ~/.dotfiles
-cd ~/.dotfiles
-
-  ```
+    ```
+     git clone [https://github.com/samsul-arafin/dotfiles.git](https://github.com/samsul-arafin/dotfiles.git) ~/.dotfiles
+    cd ~/.dotfiles
+    ```
 2. **Apply Configurations:**
   I use GNU Stow to manage symlinks. This will link the contents of the `.config` and `.local` directories in this repository to your home folder.
   **To install everything:**
    ```bash
-   stow .```
+   stow .
+   ```
 # 📜 Custom Scripts
 
 
